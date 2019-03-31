@@ -20,7 +20,6 @@ function validateForm() {
     let newPerson = new Person(nameInput, surNameInput, birthdayInput, emailInput);
     users.push(newPerson);
     displayTable();
-
     if (nameInput == "") {
         alert("Please, enter your name");
     }
@@ -59,7 +58,6 @@ function validateForm() {
 //     }
 //     list += "</ul>";
 //     wrapper.innerHTML = list;
-//     displayTable()
 // }
 
 function displayTable() {
