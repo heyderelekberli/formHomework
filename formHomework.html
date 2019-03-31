@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-12">
+                <form name="myForm" class="form-group" onsubmit="return validateForm()">
+                    <input type="text" class="form-control" name="nameInput" placeholder="Enter name">
+                    <input type="text" class="form-control my-3" name="surNameInput" placeholder="Enter surname">
+                    <input type="text" class="form-control" name="birthdayInput" placeholder="Enter birthday">
+                    <input type="email" class="form-control my-3" name="emailInput" placeholder="Enter email">
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-6 mr-0">
+                <h4>Delete user from list</h4>
+                <input type="text" class="p-1 deleteInput mt-3" placeholder="Enter ID">
+                <button class="btn btn-warning mb-1 ml-2" onclick="deleteId()">Delete</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                <button class="btn btn-outline-info mx-1" onclick="sortByName()">Name</button>
+                <button class="btn btn-outline-info" onclick="sortBysurname()">Surname</button>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-12">
+                <div id="myDiv">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+    <script src="js/formHomework.js"></script>
+</body>
+
+</html>
