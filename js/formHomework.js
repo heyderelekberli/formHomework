@@ -17,7 +17,7 @@ function validateForm() {
     let surNameInput = document.forms["myForm"]["surNameInput"].value;
     let birthdayInput = document.forms["myForm"]["birthdayInput"].value;
     let emailInput = document.forms["myForm"]["emailInput"].value;
-    let newPerson = new Person(nameInput, surNameInput, birthdayInput, emailInput);
+    let newPerson = new Person( nameInput, surNameInput, birthdayInput, emailInput);
     users.push(newPerson);
     displayTable();
     if (nameInput == "") {
@@ -35,7 +35,7 @@ function validateForm() {
     if (birthdayInput == "") {
         alert("Please, enter your date");
     }
-    else if (birthdayInput == "YYYY-MM-DD") {
+    else if (birthdayInput == "2015-03-25") {
         alert("Please enter correct date format")
     }
     if (emailInput == "") {
@@ -47,18 +47,6 @@ function validateForm() {
     console.log(users)
     return false;
 }
-
-
-// function displayNames() {
-//     let list = "<ul class='list-group'>";
-//     for (let i = 0; i < users.length; i++) {
-//         list += "<li class='list-group-item id=\"(i+1)\"'>" +
-//             users[i].nameInput + " " +
-//             users[i].surNameInput + " " + users[i].birthdayInput + " - " + users[i].emailInput + "</li>";
-//     }
-//     list += "</ul>";
-//     wrapper.innerHTML = list;
-// }
 
 function displayTable() {
     let list = "<table class='table'> <thead> " +
