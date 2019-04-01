@@ -71,9 +71,9 @@ function displayTable() {
         '</tr>' +
         '</thead> <tbody>';
     for (let i = 0; i < users.length; i++) {
-        list += "<tr><th scope='row'>" + (i + 1) + "</th><td>" + users[i].nameInput +
-            "</td><td>" + users[i].surNameInput + "</td><td>" + users[i].birthdayInput +
-            "</td><td>" + users[i].emailInput + "</td></tr>";
+        list += "<tr><th scope='row'>" + (i + 1) + "</th><td>" + users[i].name +
+            "</td><td>" + users[i].surname + "</td><td>" + users[i].birthday +
+            "</td><td>" + users[i].email + "</td></tr>";
     }
     list += "</tbody></table>";
     wrapper.innerHTML = list;
