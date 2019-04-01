@@ -4,7 +4,7 @@ function Person(ad, soyad, yas, email, id) {
     this.id = id;
     this.name = ad;
     this.surname = soyad;
-    this.age = yas;
+    this.birthday = yas;
     this.email = email;
 }
 
@@ -35,7 +35,7 @@ function validateForm() {
     if (birthdayInput == "") {
         alert("Please, enter your date");
     }
-    else if (birthdayInput == "ISO Date") {
+    else if (birthdayInput == "YYYY-MM-DD") {
         alert("Please enter correct date format")
     }
     if (emailInput == "") {
